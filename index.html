@@ -16,9 +16,41 @@ button{background:#6366f1;color:#fff;border:0;padding:8px 16px;border-radius:10p
 section{max-width:900px;margin:20px auto;padding:0 16px}
 .card{background:var(--card);border-radius:14px;padding:14px 18px;margin:10px 0;border-left:4px solid #6366f1}
 .card b{display:block}.card small{opacity:.7}
+
+#walk{height:450vh;position:relative}
+#stage{position:sticky;top:0;height:100vh;overflow:hidden;background:linear-gradient(#070b1d 0%,#18254d 38%,#6a5278 66%,#f2b27a 100%)}
+#stars{position:absolute;inset:0 0 50% 0;background:radial-gradient(1px 1px at 12% 20%,#fff9,transparent),radial-gradient(1px 1px at 38% 12%,#fff8,transparent),radial-gradient(1.5px 1.5px at 66% 24%,#fffa,transparent),radial-gradient(1px 1px at 84% 10%,#fff8,transparent),radial-gradient(1px 1px at 52% 32%,#fff7,transparent)}
+#glow{position:absolute;left:0;right:0;bottom:100px;height:50%;background:radial-gradient(ellipse at 70% 100%,#ffb36a99,transparent 65%)}
+.ly,#photo{position:absolute;left:0;right:0;background-repeat:repeat-x}
+.ly{background-size:auto 100%}
+#L1{bottom:96px;height:50%;background-image:url(assets/city-far.svg)}
+#L2{bottom:96px;height:62%;background-image:url(assets/city-mid.svg)}
+#L3{bottom:84px;height:74%;background-image:url(assets/city-near.svg)}
+#haze{position:absolute;left:0;right:0;bottom:96px;height:34%;background:linear-gradient(transparent,#f2b27a55)}
+#photo{display:none;top:0;bottom:84px;background-size:auto 100%;background-position:0 bottom;background-image:url(assets/city-photo.jpg)}
+.photo #photo{display:block}.photo .ly,.photo #haze,.photo #glow,.photo #stars{display:none}
+#walkway{position:absolute;left:0;right:0;bottom:70px;height:16px;background:linear-gradient(#7b8194,#3a3f4d);border-top:2px solid #9aa0b4}
+#road{position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(#232733,#07080c)}
+#road::after{content:"";position:absolute;inset:0;opacity:.12;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+#road i{position:absolute;left:0;right:0;top:30px;height:4px;background:repeating-linear-gradient(90deg,#e9e3c6b0 0 50px,transparent 50px 110px)}
+.car{position:absolute;height:6px;width:130px;border-radius:6px;filter:blur(2.5px);z-index:2}
+#c1{bottom:42px;background:linear-gradient(90deg,transparent,#fff4c8)}#c2{bottom:12px;background:linear-gradient(90deg,#ff4a4a,transparent)}
+#vig{position:absolute;inset:0;pointer-events:none;z-index:4;background:radial-gradient(ellipse at center,transparent 55%,#000a 100%)}
+#hero{position:absolute;left:22%;bottom:30px;width:clamp(110px,13vw,190px);aspect-ratio:197/330;z-index:3;background:url(assets/kapil-sprite.png) 0 0/800% 100% no-repeat}
+#sh{position:absolute;left:-12%;right:-12%;bottom:-2%;height:5%;background:radial-gradient(#000b,transparent 70%);filter:blur(3px);z-index:-1}
+#hud{position:absolute;top:14px;left:14px;right:14px;z-index:6;font-family:monospace;color:#7dd3fc;font-weight:700;display:flex;gap:14px;align-items:center;flex-wrap:wrap;text-shadow:0 0 8px #000}
+#pb{flex:1;min-width:120px;height:10px;border:2px solid #7dd3fc;border-radius:6px}#bar{height:100%;width:0;background:#f2b27a}
+.mc{position:absolute;right:5%;top:22%;z-index:5;width:min(380px,88%);background:#0b1224dd;border:1.5px solid #7dd3fc;border-radius:14px;padding:16px 20px;color:#fff;opacity:0;transform:translateY(20px);transition:.4s;box-shadow:0 0 24px #0008}
+.mc.on{opacity:1;transform:none}.mc h4{margin:0 0 6px;color:#f2b27a;font-family:monospace}
+#hint{position:absolute;bottom:100px;left:50%;transform:translateX(-50%);z-index:6;color:#fff;font-family:monospace;animation:bob 1.5s infinite;margin:0;text-shadow:0 0 6px #000}
+@media(max-width:700px){.mc{top:12%;right:50%;transform:translate(50%,20px)}.mc.on{transform:translate(50%,0)}#hero{left:6%}}
 </style></head><body>
 <header><div id="me" title="Click me!"></div><div id="bubble">Hi, I'm Kapil 👋 Click me!</div>
 <h1>Kapil Sharma</h1><p class="sub">Salesforce Developer · Agentforce · CRM Automation & Integrations</p></header>
+<section style="text-align:center;margin-bottom:0"><h3>🌆 Neon City: scroll to drive my story</h3></section>
+<div id="walk"><div id="stage"><div id="stars"></div><div id="glow"></div><div id="photo"></div><div class="ly" id="L1"></div><div id="haze"></div><div class="ly" id="L2"></div><div class="ly" id="L3"></div><div id="walkway"></div><div id="road"><i id="dash"></i></div><div class="car" id="c1"></div><div class="car" id="c2"></div>
+<div id="hero"><div id="sh"></div></div><div class="mc"><h4>MISSION 1 · ORIGIN STORY</h4>Hey, I'm <b>Kapil Sharma</b> 👋 a Salesforce Developer from Jaipur. <b>5+ years</b> of software dev: ~3 years Salesforce, ~2 years PHP/Laravel.</div><div class="mc"><h4>MISSION 2 · CLOUD SCIENCE LABS</h4>Shipped an <b>Agentforce Service Agent</b> for AI support, and re-architected a real estate platform natively on Salesforce, replacing Propertybase to cut costs.</div><div class="mc"><h4>MISSION 3 · BUILDING THE CITY</h4>Octal IT: CMS for the <b>HIPI</b> video platform on Salesforce. Earlier: Laravel, payment gateways, AWS S3, HRMS &amp; pharmacy systems.</div><div class="mc"><h4>LOOT UNLOCKED 🏅</h4><b>Salesforce Certified AI Associate</b> and <b>Agentforce Specialist</b>.<br>Let's team up → <a style='color:#22d3ee' href='mailto:kapil1761996@gmail.com'>kapil1761996@gmail.com</a></div>
+<div id="vig"></div><div id="hud"><span id="mis">MISSION 1/4</span><div id="pb"><div id="bar"></div></div><span>XP 5+ YRS</span></div><p id="hint">▼ SCROLL TO DRIVE ▼</p></div></div>
 <section style="text-align:center"><h3>🎮 Drag, throw &amp; play with my tech stack</h3>
 <button onclick="shake()">💥 Shake</button><button onclick="grav=!grav">🌍 Toggle gravity</button></section>
 <div id="arena"></div>
@@ -60,4 +92,14 @@ b.onpointerdown=()=>{score++;b.textContent='💥';setTimeout(()=>b.remove(),150)
 const bot=document.createElement('div');bot.textContent='🤖';bot.style.cssText='position:fixed;font-size:40px;pointer-events:none;z-index:9;left:0;top:0';document.body.appendChild(bot);
 let mx=innerWidth/2,my=innerHeight/2,bx=mx,by=my;addEventListener('mousemove',e=>{mx=e.clientX+25;my=e.clientY+25});
 (function f(){bx+=(mx-bx)*.06;by+=(my-by)*.06;bot.style.transform=`translate(${bx}px,${by}px)`;requestAnimationFrame(f)})();
+
+(function(){const st=document.getElementById('stage'),im=new Image();im.onload=()=>st.classList.add('photo');im.src='assets/city-photo.jpg';
+const g=i=>document.getElementById(i),L=[['L1',500],['L2',1300],['L3',2600],['photo',900]].map(([i,f])=>[g(i),f]);
+const W=g('walk'),hero=g('hero'),cs=[...document.querySelectorAll('.mc')],bar=g('bar'),mis=g('mis'),dash=g('dash'),hint=g('hint'),c1=g('c1'),c2=g('c2');let wt;
+function upd(){const r=W.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(W.offsetHeight-innerHeight))),i=Math.min(3,Math.floor(p*4));
+L.forEach(([e,f])=>e.style.backgroundPositionX=-p*f+'px');dash.style.backgroundPositionX=-p*3000+'px';
+c1.style.left=(110-p*320)+'%';c2.style.left=(-25+p*340)+'%';
+cs.forEach((c,k)=>c.classList.toggle('on',k===i));bar.style.width=p*100+'%';mis.textContent='MISSION '+(i+1)+'/4';hint.style.opacity=p>.03?0:1;
+moving=true;clearTimeout(wt);wt=setTimeout(()=>moving=false,180)}
+let moving=false,tk=0;setInterval(()=>{tk++;hero.style.backgroundPositionX=((moving?1+tk%4:6+tk%2)/7*100)+'%'},170);addEventListener('scroll',upd,{passive:true});upd()})();
 </script></body></html>
