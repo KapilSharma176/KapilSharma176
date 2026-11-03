@@ -62,7 +62,7 @@ Software Engineer with **5+ years** of experience: **~3 years in Salesforce** (A
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=Technoatbrain&show_icons=true&theme=tokyonight&hide_border=true"/>
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Technoatbrain&layout=compact&theme=tokyonight&hide_border=true"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Technoatbrain&theme=tokyonight&hide_border=true"/>
+<img src="https://streak-stats.demolab.com/?user=Technoatbrain&theme=tokyonight&hide_border=true"/>
 
 </div>
 
