@@ -19,35 +19,60 @@
 
 Software Engineer with **5+ years** of experience: **~3 years in Salesforce** (Apex, LWC, Flows, Agentforce, Sales/Service/Experience Cloud) and **~2 years in PHP/Laravel & backend**. I build AI-driven support workflows, Salesforce-native solutions, CRM automation and third-party integrations.
 
+## 🌆 My Journey in Neon City
+
+<div align="center">
+
+<img src="assets/story.svg" alt="Animated Kapil walking through a neon city while the timeline 2021 to now plays" width="100%"/>
+
+**[▶ Walk through my full career journey, 2021 → now: scroll-powered Neon City chapters](https://Technoatbrain.github.io/Technoatbrain/)**
+
+</div>
+
 ## 🛠️ Tech Stack (floating live!)
 
 <div align="center"><img src="assets/skills.svg" alt="Animated skills" width="100%"/></div>
 
-## 🚀 Experience (click to expand)
+## 🚀 Career Timeline, 2021 → Now (click to expand)
 
-<details open>
-<summary><b>⚡ Software Engineer — Cloud Science Labs</b> <i>(Nov 2024 – Present)</i></summary>
+<details>
+<summary><b>🧱 Backend Developer — Code Accelerators Pvt. Ltd.</b> <i>(Jun 2021 – May 2022)</i></summary>
 
-- 🤖 Implemented an **Agentforce Service Agent** for AI-driven customer support
-- 🔄 Designed automated support workflows to cut manual effort
-- 🏠 Re-architected a real estate solution, replacing **Propertybase** with native Salesforce to reduce third-party costs
-- 🔌 Built property listing management and integrated external listing platforms using Apex & Flows
+- Built a pharmacy management system for prescription handling
+- Migrated WordPress blogs to HubSpot
+- Delivered HRMS & invoice-generation tools and client WordPress projects
 </details>
 
 <details>
-<summary><b>🎬 Software Engineer — Octal IT Solutions LLP</b> <i>(Aug 2023 – Oct 2024)</i></summary>
+<summary><b>⚙️ PHP Laravel Developer — Login2Design Technology</b> <i>(Jun 2022 – Apr 2023)</i></summary>
 
-- Managed the CMS for the **HIPI video platform** on Salesforce CRM
+- Led multiple Laravel projects across business domains
+- Integrated third-party APIs and payment gateways
+- Added video conferencing and scalable AWS S3 storage
+</details>
+
+<details>
+<summary><b>🚧 Software Engineer — Alea IT Solutions Pvt. Ltd.</b> <i>(May 2023 – Aug 2023)</i></summary>
+
+- Built authentication and role-based access systems
+- Developed APIs for frontend-backend integration
+- Improved application performance and usability
+</details>
+
+<details>
+<summary><b>☁️ Software Engineer — Octal IT Solutions LLP</b> <i>(Aug 2023 – Oct 2024)</i></summary>
+
+- Managed the **HIPI** video platform CMS on Salesforce CRM (where the Salesforce journey began)
 - Implemented role-based access control for secure content moderation
 - Developed APIs for system communication
 </details>
 
-<details>
-<summary><b>🧱 Earlier roles — PHP / Laravel & Backend</b> <i>(Jun 2021 – Aug 2023)</i></summary>
+<details open>
+<summary><b>🤖 Software Engineer — Cloud Science Labs</b> <i>(Nov 2024 – Present)</i></summary>
 
-- **Alea IT Solutions** — auth & role-based systems, frontend-backend APIs
-- **Login2Design** — Laravel projects, payment gateways, video conferencing, AWS S3
-- **Code Accelerators** — pharmacy system, HRMS, invoice tools, WordPress → HubSpot migration
+- Implemented an **Agentforce Service Agent** for AI-driven customer support
+- Re-architected a real estate solution, replacing **Propertybase** with native Salesforce to reduce third-party costs
+- Built property listing management and external listing integrations using Apex & Flows
 </details>
 
 ## 🏅 Certifications
