@@ -17,7 +17,7 @@ section{max-width:900px;margin:20px auto;padding:0 16px}
 .card{background:var(--card);border-radius:14px;padding:14px 18px;margin:10px 0;border-left:4px solid #6366f1}
 .card b{display:block}.card small{opacity:.7}
 
-#walk{height:450vh;position:relative}
+#walk{height:900vh;position:relative}
 #stage{position:sticky;top:0;height:100vh;overflow:hidden;background:linear-gradient(#070b1d 0%,#18254d 38%,#6a5278 66%,#f2b27a 100%)}
 #stars{position:absolute;inset:0 0 50% 0;background:radial-gradient(1px 1px at 12% 20%,#fff9,transparent),radial-gradient(1px 1px at 38% 12%,#fff8,transparent),radial-gradient(1.5px 1.5px at 66% 24%,#fffa,transparent),radial-gradient(1px 1px at 84% 10%,#fff8,transparent),radial-gradient(1px 1px at 52% 32%,#fff7,transparent)}
 #glow{position:absolute;left:0;right:0;bottom:100px;height:50%;background:radial-gradient(ellipse at 70% 100%,#ffb36a99,transparent 65%)}
@@ -83,13 +83,30 @@ html[data-cs=aim] #cr .tick,html[data-cs=squash] #cr .tick{opacity:1}html[data-c
 .mcard.up{background:var(--c);color:#fff;transform:scale(1.04)}.mcard.done{opacity:.55}
 .qopt{display:block;width:100%;text-align:left;margin:6px 0;background:transparent;color:var(--fg);border:2px solid #6366f180;font-size:1rem}
 .qopt.ok{background:#10b981;border-color:#10b981;color:#fff}.qopt.bad{background:#ef4444;border-color:#ef4444;color:#fff}
+
+/* ===== Journey ===== */
+#hud{align-items:flex-start}#hud span{padding-top:0}
+#tl{position:relative;flex:1;min-width:140px;height:10px;margin:0 10px 22px}
+#tl #pb{position:absolute;inset:0;min-width:0;height:auto;overflow:hidden;flex:none}
+#tl i{position:absolute;top:-5px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:#0b1224;border:2px solid #7dd3fc;cursor:pointer;z-index:2;transition:.3s}
+#tl i.past{background:#7dd3fc}#tl i.on{background:#f59e0b;border-color:#f59e0b;transform:scale(1.35);box-shadow:0 0 12px #f59e0b}
+#tl b{position:absolute;top:19px;left:50%;transform:translateX(-50%);font-size:9px;white-space:nowrap;color:#cbd5e1}#tl i.on b{color:#f59e0b}
+.mc .d{font:700 11px monospace;color:#7dd3fc;letter-spacing:1px}.mc h4{font-size:1.05rem;margin:4px 0 2px}.mc .co{font-weight:600}.mc .co small{display:block;opacity:.7;font-weight:400}
+.mc ul{margin:8px 0 0;padding-left:18px;font-size:.9rem;line-height:1.4}.mc li{margin:3px 0}
+#banner{position:absolute;left:38%;top:36%;z-index:6;transform:translate(-50%,-50%);text-align:center;font:800 clamp(22px,4vw,44px)/1.15 monospace;color:#fff;text-shadow:0 0 18px #22d3ee,0 0 40px #6366f1;opacity:0;pointer-events:none;width:80%}
+#banner small{display:block;font-size:.4em;color:#f59e0b;letter-spacing:4px;margin-bottom:6px}#banner.show{animation:bn 2.4s ease forwards}
+@keyframes bn{0%{opacity:0;transform:translate(-50%,-30%) scale(.9)}15%,70%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-62%) scale(1.04)}}
+.sign{position:absolute;bottom:150px;z-index:2;transform:translateX(-50%);display:none;text-align:center;font-family:monospace;color:#fff;background:#0b1224cc;border:2px solid var(--c);border-radius:8px;padding:6px 14px;box-shadow:0 0 18px var(--c),inset 0 0 10px #0008}
+.sign::after{content:"";position:absolute;left:50%;top:100%;width:4px;height:62px;background:#1f2937;transform:translateX(-50%)}
+.sign b{display:block;font-size:16px;color:var(--c)}.sign small{font-size:10px;opacity:.85;letter-spacing:1px;text-transform:uppercase}
+@media(max-width:700px){#tl b{display:none}#tl i.on b{display:block}#banner{left:50%}}
 </style></head><body>
 <header><div id="me" title="Click me!"></div><div id="bubble">Hi, I'm Kapil 👋 Click me!</div>
 <h1>Kapil Sharma</h1><p class="sub">Salesforce Developer · Agentforce · CRM Automation & Integrations</p></header>
-<section style="text-align:center;margin-bottom:0"><h3>🌆 Neon City: scroll to drive my story</h3></section>
+<section style="text-align:center;margin-bottom:0"><h3>🌆 Neon City: scroll to walk through my career, 2021 → now</h3></section>
 <div id="walk"><div id="stage"><div id="stars"></div><div id="glow"></div><div id="photo"></div><div class="ly" id="L1"></div><div id="haze"></div><div class="ly" id="L2"></div><div class="ly" id="L3"></div><div id="walkway"></div><div id="road"><i id="dash"></i></div><div class="car" id="c1"></div><div class="car" id="c2"></div>
-<div id="hero"><div id="sh"></div></div><div class="mc"><h4>MISSION 1 · ORIGIN STORY</h4>Hey, I'm <b>Kapil Sharma</b> 👋 a Salesforce Developer from Jaipur. <b>5+ years</b> of software dev: ~3 years Salesforce, ~2 years PHP/Laravel.</div><div class="mc"><h4>MISSION 2 · CLOUD SCIENCE LABS</h4>Shipped an <b>Agentforce Service Agent</b> for AI support, and re-architected a real estate platform natively on Salesforce, replacing Propertybase to cut costs.</div><div class="mc"><h4>MISSION 3 · BUILDING THE CITY</h4>Octal IT: CMS for the <b>HIPI</b> video platform on Salesforce. Earlier: Laravel, payment gateways, AWS S3, HRMS &amp; pharmacy systems.</div><div class="mc"><h4>LOOT UNLOCKED 🏅</h4><b>Salesforce Certified AI Associate</b> and <b>Agentforce Specialist</b>.<br>Let's team up → <a style='color:#22d3ee' href='mailto:kapil1761996@gmail.com'>kapil1761996@gmail.com</a></div>
-<div id="vig"></div><div id="hud"><span id="mis">MISSION 1/4</span><div id="pb"><div id="bar"></div></div><span>XP 5+ YRS</span></div><p id="hint">▼ SCROLL TO DRIVE ▼</p></div></div>
+<div id="hero"><div id="sh"></div></div>
+<div id="vig"></div><div id="hud"><span id="mis"></span><div id="tl"><div id="pb"><div id="bar"></div></div></div><span id="yr"></span></div><div id="banner"></div><div id="signs"></div><div id="cards"></div><p id="hint">▼ SCROLL TO DRIVE ▼</p></div></div>
 <section style="text-align:center"><h3>🎮 Drag, throw &amp; play with my tech stack</h3>
 <button onclick="shake()">💥 Shake</button><button onclick="grav=!grav">🌍 Toggle gravity</button></section>
 <div id="arena"></div>
@@ -101,11 +118,7 @@ html[data-cs=aim] #cr .tick,html[data-cs=squash] #cr .tick{opacity:1}html[data-c
 <div class="gp" id="g-snake"><div class="hudl"><span>Score: <b id="sscore">0</b></span><span>Best: <b id="sbest">0</b></span><button id="sbtn">▶ Start</button></div><canvas id="snc"></canvas><p class="gh">Arrows / WASD / swipe. Collected: <b id="sgot">–</b></p></div>
 <div class="gp" id="g-mem"><div class="hudl"><span>Moves: <b id="mmoves">0</b></span><span>Time: <b id="mtime">0</b>s</span><span>Best: <b id="mbest">–</b></span><button id="mreset">↻ Shuffle</button></div><div id="mem"></div><p class="gh" id="mmsg"></p></div>
 <div class="gp" id="g-quiz"><div id="qz"></div></div></section>
-<section><h3>🚀 Experience</h3>
-<div class="card"><b>Software Engineer · Cloud Science Labs</b><small>Nov 2024 – Present</small>Agentforce Service Agent, support automation, Salesforce-native real estate platform replacing Propertybase.</div>
-<div class="card"><b>Software Engineer · Octal IT Solutions</b><small>Aug 2023 – Oct 2024</small>HIPI video platform CMS on Salesforce, role-based moderation, APIs.</div>
-<div class="card"><b>Earlier: PHP/Laravel &amp; Backend</b><small>Jun 2021 – Aug 2023</small>Alea IT, Login2Design, Code Accelerators.</div>
-<h3>🏅 Certifications</h3><div class="card">Salesforce Certified AI Associate · Salesforce Certified Agentforce Specialist</div>
+<section><h3>🚀 Career Timeline: 2021 → Now</h3><div class="card"><b>Backend Developer · Code Accelerators Pvt. Ltd.</b><small>Jun 2021 – May 2022</small>Pharmacy management system, WordPress → HubSpot migration, HRMS and invoice tools.</div><div class="card"><b>PHP Laravel Developer · Login2Design Technology</b><small>Jun 2022 – Apr 2023</small>Led Laravel projects, payment gateways, third-party APIs, video conferencing, AWS S3.</div><div class="card"><b>Software Engineer · Alea IT Solutions Pvt. Ltd.</b><small>May 2023 – Aug 2023</small>Authentication and role-based access, frontend-backend APIs, performance tuning.</div><div class="card"><b>Software Engineer · Octal IT Solutions LLP</b><small>Aug 2023 – Oct 2024</small>HIPI video platform CMS on Salesforce, role-based moderation, APIs. <i>(Salesforce journey begins)</i></div><div class="card"><b>Software Engineer · Cloud Science Labs</b><small>Nov 2024 – Present</small>Agentforce Service Agent, support automation, Salesforce-native real estate platform replacing Propertybase.</div><h3>🏅 Certifications</h3><div class="card">Salesforce Certified AI Associate · Salesforce Certified Agentforce Specialist</div>
 <h3>📬 Contact</h3><div class="card"><a href="mailto:kapil1761996@gmail.com" style="color:#6366f1">kapil1761996@gmail.com</a> · Jaipur, Rajasthan</div></section>
 <script>
 const me=document.getElementById('me'),bub=document.getElementById('bubble');
@@ -138,15 +151,29 @@ const bot=document.createElement('div');bot.textContent='🤖';bot.style.cssText
 let mx=innerWidth/2,my=innerHeight/2,bx=mx,by=my;addEventListener('mousemove',e=>{mx=e.clientX+25;my=e.clientY+25});
 (function f(){bx+=(mx-bx)*.06;by+=(my-by)*.06;bot.style.transform=`translate(${bx}px,${by}px)`;requestAnimationFrame(f)})();
 
-(function(){const st=document.getElementById('stage'),im=new Image();im.onload=()=>st.classList.add('photo');im.src='assets/city-photo.jpg';
-const g=i=>document.getElementById(i),L=[['L1',500],['L2',1300],['L3',2600],['photo',900]].map(([i,f])=>[g(i),f]);
-const W=g('walk'),hero=g('hero'),cs=[...document.querySelectorAll('.mc')],bar=g('bar'),mis=g('mis'),dash=g('dash'),hint=g('hint'),c1=g('c1'),c2=g('c2');let wt;
-function upd(){const r=W.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(W.offsetHeight-innerHeight))),i=Math.min(3,Math.floor(p*4));
-L.forEach(([e,f])=>e.style.backgroundPositionX=-p*f+'px');dash.style.backgroundPositionX=-p*3000+'px';
-c1.style.left=(110-p*320)+'%';c2.style.left=(-25+p*340)+'%';
-cs.forEach((c,k)=>c.classList.toggle('on',k===i));bar.style.width=p*100+'%';mis.textContent='MISSION '+(i+1)+'/4';hint.style.opacity=p>.03?0:1;
-moving=true;clearTimeout(wt);wt=setTimeout(()=>moving=false,180)}
-const sp=new Image();sp.onerror=()=>{hero.style.background='url(assets/kapil-character.png) center bottom/contain no-repeat';window.spriteFailed=true};sp.src='assets/kapil-sprite.png?v=2';let moving=false,tk=0;setInterval(()=>{if(window.spriteFailed)return;tk++;hero.style.backgroundPositionX=((moving?1+tk%4:6+tk%2)/7*100)+'%'},170);addEventListener('scroll',upd,{passive:true});upd()})();
+(function(){
+const g=i=>document.getElementById(i),st=g('stage'),W=g('walk'),hero=g('hero'),bar=g('bar'),mis=g('mis'),yr=g('yr'),dash=g('dash'),hint=g('hint'),c1=g('c1'),c2=g('c2'),ban=g('banner'),tl=g('tl'),signs=g('signs'),cards=g('cards');
+const C=[{"y": "2021", "l": "JUN 21", "t": "THE BACKEND ROOKIE", "r": "Backend Developer", "c": "Code Accelerators Pvt. Ltd.", "p": "Jun 2021 – May 2022", "s": "JUN 2021", "u": "Career begins", "b": ["Built a pharmacy management system for prescription handling", "Migrated WordPress blogs to HubSpot", "Delivered HRMS &amp; invoice-generation tools and client WordPress projects"]}, {"y": "2022", "l": "JUN 22", "t": "LARAVEL LEVEL-UP", "r": "PHP Laravel Developer", "c": "Login2Design Technology", "p": "Jun 2022 – Apr 2023", "s": "JUN 2022", "u": "Laravel lead", "b": ["Led multiple Laravel projects across business domains", "Integrated third-party APIs and payment gateways", "Added video conferencing and scalable AWS S3 storage"]}, {"y": "2023", "l": "MAY 23", "t": "FULL-STACK SPRINT", "r": "Software Engineer", "c": "Alea IT Solutions Pvt. Ltd.", "p": "May 2023 – Aug 2023", "s": "MAY 2023", "u": "Full-stack sprint", "b": ["Built authentication and role-based access systems", "Developed APIs for frontend-backend integration", "Improved application performance and usability"]}, {"y": "2023", "l": "AUG 23", "t": "ENTER SALESFORCE ☁️", "r": "Software Engineer", "c": "Octal IT Solutions LLP", "p": "Aug 2023 – Oct 2024", "s": "AUG 2023", "u": "Salesforce begins", "b": ["Managed the HIPI video platform CMS on Salesforce CRM", "Implemented role-based access for secure content moderation", "Developed APIs for system communication and resolved stability issues"]}, {"y": "2024", "l": "NOV 24", "t": "THE AGENTFORCE ERA 🤖", "r": "Software Engineer", "c": "Cloud Science Labs", "p": "Nov 2024 – Present", "s": "NOV 2024", "u": "Agentforce era", "b": ["Implemented an Agentforce Service Agent for AI-driven customer support", "Re-architected a real estate solution, replacing Propertybase with native Salesforce", "Built listing management and external platform integrations with Apex and Flows"]}, {"y": "CERTS", "l": "CERTS", "t": "LEVEL-UP: CERTIFICATIONS 🏅", "r": "Salesforce Certifications", "c": "Loot unlocked", "p": "", "s": "LOOT", "u": "Certifications", "b": ["Salesforce Certified AI Associate", "Salesforce Certified Agentforce Specialist"]}, {"y": "2026", "l": "NOW", "t": "NEXT MISSION: YOU? 🚀", "r": "Today: November 2026", "c": "5+ years in software · ~3 on Salesforce", "p": "", "s": "NOW", "u": "Nov 2026", "b": ["Building AI-driven CRM solutions with Agentforce", "Open to exciting Salesforce &amp; Agentforce projects", "<a href=\"mailto:kapil1761996@gmail.com\" style=\"color:#7dd3fc\">kapil1761996@gmail.com</a>"]}],n=C.length,COL=['#22d3ee','#818cf8','#34d399','#f59e0b','#f472b6','#a78bfa','#f2b27a'],K=5600;
+const ph=new Image();ph.onload=()=>st.classList.add('photo');ph.src='assets/city-photo.jpg';
+const sp=new Image();sp.onerror=()=>{hero.style.background='url(assets/kapil-character.png) center bottom/contain no-repeat';window.spriteFailed=true};sp.src='assets/kapil-sprite.png?v=2';
+const L=[['L1',1100],['L2',2900],['L3',5600],['photo',1900]].map(([i,f])=>[g(i),f]);
+cards.innerHTML=C.map((c,k)=>`<div class="mc"><div class="d">CHAPTER ${k+1} · ${c.s}</div><h4>${c.r}</h4><div class="co">${c.c}${c.p?` <small>${c.p}</small>`:''}</div><ul>${c.b.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('');
+signs.innerHTML=C.map((c,k)=>`<div class="sign" style="--c:${COL[k]}"><b>${c.s}</b><small>${c.u}</small></div>`).join('');
+tl.insertAdjacentHTML('beforeend',C.map((c,k)=>`<i style="left:${(k+.5)/n*100}%"><b>${c.l}</b></i>`).join(''));
+const cs=[...cards.children],sg=[...signs.children],dots=[...tl.querySelectorAll('i')];
+dots.forEach((d,k)=>d.onclick=()=>scrollTo({top:W.getBoundingClientRect().top+scrollY+(k+.5)/n*(W.offsetHeight-innerHeight),behavior:'smooth'}));
+let moving=false,tk=0,wt,ci=-1;mis.textContent='CHAPTER 1/'+n;yr.textContent=C[0].y;
+setInterval(()=>{if(window.spriteFailed)return;tk++;hero.style.backgroundPositionX=((moving?1+tk%4:6+tk%2)/7*100)+'%'},170);
+function upd(){const r=W.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(W.offsetHeight-innerHeight))),i=Math.min(n-1,Math.floor(p*n)),inV=r.top<=0&&r.bottom>=innerHeight;
+L.forEach(([e,f])=>e.style.backgroundPositionX=-p*f+'px');dash.style.backgroundPositionX=-p*K+'px';
+c1.style.left=(110-((p*1800)%150))+'%';c2.style.left=(-30+((p*2400)%160))+'%';
+const hx=hero.offsetLeft+hero.offsetWidth/2,w=st.clientWidth;
+sg.forEach((e,k)=>{const x=hx+((k+.12)/n-p)*K;e.style.display=x<-200||x>w+200?'none':'block';e.style.left=x+'px'});
+cs.forEach((c,k)=>c.classList.toggle('on',k===i));dots.forEach((d,k)=>{d.classList.toggle('on',k===i);d.classList.toggle('past',k<i)});
+bar.style.width=p*100+'%';mis.textContent='CHAPTER '+(i+1)+'/'+n;yr.textContent=C[i].y;
+if(!inV)ci=-1;else if(i!==ci){ci=i;ban.innerHTML=`<small>CHAPTER ${i+1}</small>${C[i].t}`;ban.classList.remove('show');void ban.offsetWidth;ban.classList.add('show')}
+hint.style.opacity=p>.02?0:1;moving=true;clearTimeout(wt);wt=setTimeout(()=>moving=false,180)}
+addEventListener('scroll',upd,{passive:true});upd()})();
 </script><script>
 (function(){
 if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
@@ -161,7 +188,7 @@ function rs(){const d=devicePixelRatio||1;cv.width=innerWidth*d;cv.height=innerH
 function set(s){if(s===cur)return;cur=s;root.dataset.cs=s;ring.style.color=dot.style.color=S[s][1];cl1.textContent=S[s][0]}set('idle');
 function stateOf(t){if(dragging)return'grab';if(!t||!t.closest)return'idle';
 if(t.closest('#pit span'))return'squash';if(t.closest('#pit'))return'aim';if(t.closest('.chip'))return'drag';if(t.closest('#me'))return'avatar';
-if(t.closest('.gp canvas'))return'play';if(t.closest('a,button,.mcard'))return'link';if(t.closest('.card,.mc'))return'data';if(t.closest('#stage'))return'scroll';return'idle'}
+if(t.closest('.gp canvas'))return'play';if(t.closest('a,button,.mcard,#tl i'))return'link';if(t.closest('.card,.mc'))return'data';if(t.closest('#stage'))return'scroll';return'idle'}
 const pad=n=>String(Math.round(n)).padStart(4,'0'),bits=['0','1','0','1','{ }','</>','#','fn'];
 addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;
 if(!shown){shown=true;tx=mx;ty=my;root.classList.add('cur-on','cur-show')}
