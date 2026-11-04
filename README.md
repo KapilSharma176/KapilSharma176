@@ -6,7 +6,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=6366F1&center=true&vCenter=true&width=700&lines=Salesforce+Developer+%E2%9A%A1;Agentforce+%F0%9F%A4%96+AI-driven+Support;Apex+%7C+LWC+%7C+Flows+%7C+REST+APIs;5%2B+Years+of+Building+Things+%F0%9F%9A%80)](https://git.io/typing-svg)
 
-[![Live Playground](https://img.shields.io/badge/🎮_Play_with_my_portfolio-6366f1?style=for-the-badge)](https://Technoatbrain.github.io/Technoatbrain/)
+[![Live Playground](https://img.shields.io/badge/🎮_Play_with_my_portfolio-6366f1?style=for-the-badge)](https://KapilSharma176.github.io/KapilSharma176/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kapil1761996@gmail.com)
 ![Salesforce](https://img.shields.io/badge/Salesforce-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white)
 ![Location](https://img.shields.io/badge/Jaipur-Rajasthan-10b981?style=for-the-badge&logo=googlemaps&logoColor=white)
@@ -25,7 +25,7 @@ Software Engineer with **5+ years** of experience: **~3 years in Salesforce** (A
 
 <img src="assets/story.svg" alt="Animated Kapil walking through a neon city while the timeline 2021 to now plays" width="100%"/>
 
-**[▶ Walk through my full career journey, 2021 → now: scroll-powered Neon City chapters](https://Technoatbrain.github.io/Technoatbrain/)**
+**[▶ Walk through my full career journey, 2021 → now: scroll-powered Neon City chapters](https://KapilSharma176.github.io/KapilSharma176/)**
 
 </div>
 
@@ -84,10 +84,10 @@ Software Engineer with **5+ years** of experience: **~3 years in Salesforce** (A
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Technoatbrain&show_icons=true&theme=tokyonight&hide_border=true"/>
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Technoatbrain&layout=compact&theme=tokyonight&hide_border=true"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=KapilSharma176&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KapilSharma176&layout=compact&theme=tokyonight&hide_border=true"/>
 
-<img src="https://streak-stats.demolab.com/?user=Technoatbrain&theme=tokyonight&hide_border=true"/>
+<img src="https://streak-stats.demolab.com/?user=KapilSharma176&theme=tokyonight&hide_border=true"/>
 
 </div>
 
@@ -95,14 +95,14 @@ Software Engineer with **5+ years** of experience: **~3 years in Salesforce** (A
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Technoatbrain/Technoatbrain/output/github-contribution-grid-snake-dark.svg">
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/Technoatbrain/Technoatbrain/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KapilSharma176/KapilSharma176/output/github-contribution-grid-snake-dark.svg">
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/KapilSharma176/KapilSharma176/output/github-contribution-grid-snake.svg">
 </picture>
 </div>
 
 ## 🎮 Play Zone
 
-> GitHub READMEs can't run scripts, so the draggable, throwable tech chips and my clickable avatar live on my **[interactive portfolio page](https://Technoatbrain.github.io/Technoatbrain/)**. Go throw some Apex around, squash bugs in the mini game 🐛, and let the little 🤖 follow your cursor! 😄
+> GitHub READMEs can't run scripts, so the draggable, throwable tech chips and my clickable avatar live on my **[interactive portfolio page](https://KapilSharma176.github.io/KapilSharma176/)**. Go throw some Apex around, squash bugs in the mini game 🐛, and let the little 🤖 follow your cursor! 😄
 
 <div align="center">
 
